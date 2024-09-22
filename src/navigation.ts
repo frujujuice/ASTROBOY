@@ -24,14 +24,31 @@ export const headerData = {
       ],
     },
     {
+      text: 'Necklaces',
+      links: [
+        {
+          text: 'Latest Necklaces',
+          href: getPermalink('/homes/personal'),
+        },
+        {
+          text: 'Gold Necklaces',
+          href: getPermalink('/homes/saas'),
+        },
+      ],
+    },
+    {
       text: 'Repairs',
       links: [
         {
-          text: 'Broken Rings',
+          text: 'Ring Repair',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Ring Cleaning',
+          text: 'Necklace Repair',
+          href: getPermalink('/#features'),
+        },
+        {
+          text: 'Jewelry Cleaning',
           href: getPermalink('/services'),
         },
         {
@@ -52,32 +69,20 @@ export const footerData = {
       title: 'Product',
       links: [
         { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
         { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
         { text: 'Customer stories', href: '#' },
         { text: 'Pricing', href: '#' },
         { text: 'Resources', href: '#' },
       ],
     },
     {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
-    },
-    {
       title: 'Support',
       links: [
-        { text: 'Docs', href: '#' },
+        { text: 'Contact Us', href: '#' },
         { text: 'Community Forum', href: '#' },
         { text: 'Professional Services', href: '#' },
         { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Help', href: '#' },
       ],
     },
     {
@@ -87,8 +92,6 @@ export const footerData = {
         { text: 'Blog', href: '#' },
         { text: 'Careers', href: '#' },
         { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
         { text: 'Shop', href: '#' },
       ],
     },

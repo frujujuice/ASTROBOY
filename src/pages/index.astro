@@ -6,9 +6,9 @@ import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import RingFeature from '~/components/widgets/RingFeature.astro';
 
-import goldring from '~/assets/images/goldring_noback.jpg';
-import silverring from '~/assets/images/silverring_noback.jpeg';
-import diamondring from '~/assets/images/diamondring_noback.png';
+import goldring from '~/assets/images/goldring.png';
+import silverring from '~/assets/images/silverring.png';
+import diamondring from '~/assets/images/diamondring.jpg';
 
 const metadata = {
   title: 'Lee & Son — Jewelry for the modern man',
@@ -26,11 +26,11 @@ const metadata = {
         text: 'View Store',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:shopping-bag',
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/ring.webp', alt: 'lee&son Hero Image' }}
+    image={{ src: '~/assets/images/diamondring.jpg', alt: 'lee&son Hero Image' }}
   >
     <Fragment slot="title">
       Lee & Son <span class="hidden xl:inline">- Jewelry For The Modern Man</span>
