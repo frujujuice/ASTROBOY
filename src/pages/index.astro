@@ -2,13 +2,14 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import RingFeature from '~/components/widgets/RingFeature.astro';
 
 import goldring from '~/assets/images/goldring.png';
 import silverring from '~/assets/images/silverring.png';
 import diamondring from '~/assets/images/diamondring.jpg';
+import RingContact from '~/components/widgets/RingContact.astro';
+import RingNote from '~/components/widgets/RingNote.astro';
 
 const metadata = {
   title: 'Lee & Son — Jewelry for the modern man',
@@ -47,6 +48,10 @@ const metadata = {
     </Fragment>
   </Hero>
 
+  <!-- Note Widget ******************* -->
+
+  <RingNote />
+
   <RingFeature
     id="shop"
     tagline="Latest Arrivals"
@@ -77,30 +82,40 @@ const metadata = {
     ]}
   />
 
-  <!-- Note Widget ******************* -->
-
-  <Note />
-
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="Our Story"
-    subtitle="Established in 1802, this elegant jewelry store specializes in handcrafted rings, merging timeless craftsmanship with contemporary design."
+    tagline="What We Do"
+    title="Personalized Creations and Expert Repairs"
+    subtitle="We specialize in custom design, engraving, repair, and material sourcing for men's rings and necklaces, delivering personalized, high-quality jewelry tailored to your unique style."
     items={[
       {
-        title: 'Custom Ring Design',
+        title: 'Custom Ring and Necklace Design',
         description:
-          'Work closely with our skilled artisans to create a one-of-a-kind ring tailored to your personal style and story.',
-        icon: 'tabler:brand-tailwind',
+          'Craft personalized rings and necklaces tailored to individual tastes, from initial sketches to finished, one-of-a-kind pieces.',
+        icon: 'tabler:diamond',
       },
       {
-        title: 'Ring Restoration and Repair',
+        title: 'Engraving and Personalization',
         description:
-          'Trust our experts to restore and repair your cherished rings, preserving their beauty and history for generations to come.',
-        icon: 'tabler:components',
+          'Add unique engravings, such as initials or meaningful symbols, to rings and necklaces for a personal touch.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'Jewelry Repair and Restoration',
+        description:
+          'Provide expert repair services, including resizing rings, fixing broken chains, and restoring worn-out jewelry to its original condition.',
+        icon: 'tabler:hammer',
+      },
+      {
+        title: 'Metal and Stone Sourcing',
+        description:
+          'Offer sourcing of high-quality metals and gemstones, helping clients select materials that best suit their style and budget.',
+        icon: 'tabler:businessplan',
       },
     ]}
   />
+
+  <RingContact />
 </Layout>
