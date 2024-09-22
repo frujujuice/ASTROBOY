@@ -20,7 +20,7 @@ export const headerData = {
         {
           text: 'Diamond Rings',
           href: getPermalink('/homes/mobile-app'),
-        }
+        },
       ],
     },
     {
@@ -41,9 +41,9 @@ export const headerData = {
       ],
     },
     {
-      text: 'Blog'
-    }
-  ]
+      text: 'Blog',
+    },
+  ],
 };
 
 export const footerData = {
