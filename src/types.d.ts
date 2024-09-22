@@ -138,7 +138,7 @@ export interface Item {
   icon?: string;
   classes?: Record<string, string>;
   callToAction?: CallToAction;
-  image?: Image;
+  image?: Image | ImageMetadata;
 }
 
 export interface Price {
